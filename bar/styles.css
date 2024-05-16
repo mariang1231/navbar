@@ -1,0 +1,127 @@
+body {
+    margin:0;
+    font-family: "Montserrat", sans-serif;
+    font-size:16px;
+}
+
+header {
+    background-color: #ffffff;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:  10px 20px;
+    margin-left: auto;
+}
+
+.logo img {
+    height: 30px;
+}
+
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-weight: 600; /* Esto es para asegurarse de que se utiliza la variante Semibold */
+
+}
+
+.nav-links li {
+    display: inline-block;
+    margin-left:60px;
+}
+
+.nav-links li:first-child {
+    margin-left:0; 
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #585757;
+}
+
+.nav-links li a:hover {
+    text-decoration: none;    
+}
+
+/* Estilos para el menú desplegable */
+.dropdown {
+    position: relative;
+    display: inline-block;
+
+}
+
+.expand-icon { 
+    font-size:.5.5em; ; /* Cambia el tamaño del icono a 1.5 veces el tamaño del texto */
+    color:#080808;
+    margin-left:5px;
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:#ffffff;    
+    min-width:100px;
+    padding:0;
+    box-shadow: 0 8px 16px 0 rgba(100, 98, 98, 0.2);
+    z-index: 100;
+}
+
+.dropdown-content a {
+    color: #ffffff;
+    padding: 12px 14px;
+    text-decoration:none;
+    display: block;
+    text-align:left;
+    border-radius:4px;
+    width: 100%;
+}
+
+.dropdown-content a:hover {
+    background-color: #D6BBFB;
+    
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+.expand-icon {
+  margin-left: 5px; /* Espacio entre el texto y el icono de expansión */
+  transition: transform 0.3s; /* Añade una transición para la rotación */
+}
+
+.dropdown:hover.dropbtn.expand-icon {
+    transform: rotate(180deg); /* Rota el icono cuando se muestra la lista desplegable */
+  }
+  
+
+@media (min-width:401px ){
+    .navbar{
+        width:90%;
+        min-height: 45px; ;
+    }
+}
+
+
+@media (max-width:400px ){
+    .navbar{
+        top:0;
+        left:0 ;
+        position: relative;
+        width:60%;
+        height:100%; 
+    }
+}
+
+
+
+
+
+
+
